@@ -18,5 +18,5 @@ def is_position_safe(N, M, position):
 # 아래의 코드를 수정하거나 새롭게 추가하지 않습니다.
 ########## 코드 변경 금지 ############
 if __name__ == "__main__":
-    print(is_position_safe(3, 1, (0, 0)))  # True
-    print(is_position_safe(3, 0, (0, 0)))  # False
+    print(is_position_safe(3, 1, (0, 0)))  # True (1, 0)
+    print(is_position_safe(3, 0, (0, 0)))  # False (-1,0)
