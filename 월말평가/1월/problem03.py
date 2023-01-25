@@ -2,14 +2,17 @@
 def is_good_rate(movie):
     
     try:
-        if movie.get("user_rating") > 8 or movie.get("user_rating") == 8:
+        if movie.get("user_rating") >= 8:
             return True
     except:
-
+        
         return False
     # 여기에 코드를 작성하여 함수를 완성합니다.
+"""
+def is_good_rate(movie):
 
 
+"""
 # 아래의 코드를 수정하거나 새롭게 추가하지 않습니다.
 ########## 코드 변경 금지 ############
 if __name__ == '__main__':

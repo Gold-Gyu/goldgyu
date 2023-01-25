@@ -24,11 +24,31 @@ def calculator(*numbers):
 
     else:
         return 0
+"""
+toatl = 0
+length = 0
+
+for num in numbers:
+    length += 1
+    total += num
+
+if length == 2:
+    temp = numbers[0] + numbers[1]
+    if temp % 2:
+        return numbers[0] * numbers[1] * 0.5
+    else:
+        return numbers[0] * numbers[1]
+
+elif length == 1:
+    return numbers[0] * numbers[0] * 3.14
+
+elif length > 2:
+    return total, total/length
+else:
+    return 0
 
 
-
-
-
+"""
     # 여기에 코드를 작성하여 함수를 완성합니다.
 
 

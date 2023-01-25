@@ -1,6 +1,15 @@
 # 함수 내부에 불필요한 print문이 있는 경우 오답으로 처리가 됩니다.
+
+#
 def caesar(word, n):
-    ord()
+    result = ""
+    for char in word:
+        if char.isupper():
+            A = chr(65 + (ord(char) - 65 + n) % 26)
+        elif char.islower():
+            A = chr(97 + (ord(char) - 97 + n) % 26)
+        result += char
+    return result
     # 여기에 코드를 작성하여 함수를 완성합니다.
 
 

@@ -10,8 +10,25 @@ def min_max(scores):
             b = i
 
     return((a,b))
+"""
+def min_max(scores):
+최소값을 구할 때 변수의 초기값은 적당히 큰 값
+min_val = 99999
+최대값을 구할 때 변수의 초기값은 적당히 작은 값
+max_val = 0
 
+for score in scores:
+    if min_val > score:
+        min_value = score
+
+    if max_val < score:
+        max_val = score
     
+    return min_val, max_val
+
+
+
+""" 
     # 여기에 코드를 작성하여 함수를 완성합니다.
 
 
