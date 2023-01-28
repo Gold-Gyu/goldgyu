@@ -1,7 +1,7 @@
 # 함수 내부에 불필요한 print문이 있는 경우 오답으로 처리가 됩니다.
 # python 내장함수 min, max 사용 금지
 def min_max(scores):
-    a = 75
+    a = 100000000000
     b = 0
     for i in scores:
         if i < a:
@@ -9,7 +9,7 @@ def min_max(scores):
         if i > b:
             b = i
 
-    return((a,b))
+    return a,b
 """
 def min_max(scores):
 최소값을 구할 때 변수의 초기값은 적당히 큰 값

@@ -1,11 +1,8 @@
 # 함수 내부에 불필요한 print문이 있는 경우 오답으로 처리가 됩니다.
 def is_good_rate(movie):
-    
-    try:
-        if movie.get("user_rating") >= 8:
-            return True
-    except:
-        
+    if movie.get("user_rating") >= 8:
+        return True
+    else:    
         return False
     # 여기에 코드를 작성하여 함수를 완성합니다.
 """

@@ -27,5 +27,5 @@ def calculator(*numbers):
 if __name__ == '__main__':
     print(calculator(5))                # 78.5
     print(calculator(10, 20))           # 200
-    print(calculator(10, 20, 30, 40))   # (100, 25.0)
+    print(calculator(10, 20, 30, 100, 100))   # (100, 25.0)
     print(calculator())                 # 0

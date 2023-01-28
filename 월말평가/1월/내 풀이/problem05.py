@@ -1,13 +1,23 @@
 # 함수 내부에 불필요한 print문이 있는 경우 오답으로 처리가 됩니다.
 def calc_lunch_cost(lunch_cost):
-    lunch = []
-    sum_ = 0
-
-    # lunch.append(lunch_cost.values())
     
-    sum_ = lunch_cost["김싸피"] + lunch_cost["박싸피"] + lunch_cost["이싸피"] + lunch_cost["조싸피"] + lunch_cost["최싸피"]
+    sum_ = 0
+    for cost in lunch_cost.values():
+        sum_ += cost
+
     return sum_
+
+
+
+    # sum_ = 0
+
+    # # lunch.append(lunch_cost.values())
+    
+    # sum_ = lunch_cost["김싸피"] + lunch_cost["박싸피"] + lunch_cost["이싸피"] + lunch_cost["조싸피"] + lunch_cost["최싸피"]
+    # return sum_
     # 여기에 코드를 작성하여 함수를 완성합니다.
+
+    
 """
 def calc_lunch_cost(lunch_cost):
 total = 0

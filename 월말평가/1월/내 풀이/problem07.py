@@ -1,6 +1,6 @@
 # 함수 내부에 불필요한 print문이 있는 경우 오답으로 처리가 됩니다.
 def calculator(*numbers):
-
+    
 
 
     if len(numbers) == 1: # 입력값 1개일 때
@@ -57,5 +57,5 @@ else:
 if __name__ == '__main__':
     print(calculator(5))                # 78.5
     print(calculator(10, 20))           # 200
-    print(calculator(10, 20, 30, 40))   # (100, 25.0)
+    print(calculator(10, 20, 30, 100,100))   # (100, 25.0)
     print(calculator())                 # 0
