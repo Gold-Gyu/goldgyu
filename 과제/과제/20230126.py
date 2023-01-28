@@ -26,7 +26,7 @@ print('입장 기록 많은 Top3')
 for k in range(3):
     print(f"{answer1[k][0]} {answer1[k][1]}회")
 
-print('\n출입 기록이 수상한 사람')
+
 
 # exit record 반복횟수 찾기
 
@@ -61,8 +61,20 @@ for num in range(len(answer1)):
         final.append(A[num][0])
         final.append(A[num][1]-B[num][1])
 
-
+print('\n출입 기록이 수상한 사람')
 print(f"{final[2]}은 입장 기록이 {final[3]}회 더 많아 수상합니다.")
-print(f"{final[0]}은 퇴장 기록이 {-final[1]}회 더 많아 수상합니다.")       
+print(f"{final[0]}은 퇴장 기록이 {-final[1]}회 더 많아 수상합니다.") 
+
+
+def count_vowels(words):
+    lst = []
+    for word in words:
+        if word in 'aeiou':
+            lst.append(word)
+
+    return len(lst)
+
+count_vowels('apple')
+count_vowels('banana') 
 
 
