@@ -2,12 +2,12 @@ import requests
 from pprint import pprint
 
 
-five = []
+
 def ranking():
     url = 'https://api.themoviedb.org/3/movie/popular?api_key=bfbb47f47b0229def79825a170a5682b'
     # 여기에 코드를 작성합니다.  
     response = requests.get(url).json()
-    
+    five = []
     a = response.get("results") # a는 리스트 안에 딕셔너리들 포진
 
     b = sorted(a, key = lambda x : x['vote_average'], reverse=True)

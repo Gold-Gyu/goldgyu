@@ -5,10 +5,12 @@ def popular_count():
     url = 'https://api.themoviedb.org/3/movie/popular?api_key=bfbb47f47b0229def79825a170a5682b'
     # 여기에 코드를 작성합니다.  
     response = requests.get(url).json()
-    
     a = response.get("results")
+    cnt = 0
+    for b in a:
+        cnt += 1
 
-    return (len(a))
+    return cnt
 
     # for i in response_results:
         
