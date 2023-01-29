@@ -11,7 +11,7 @@ def movie_info(movie):
     movie_dict["poster_path"] = movie["poster_path"]
     movie_dict["vote_average"] = movie["vote_average"]
     movie_dict["overview"] = movie["overview"]
-
+    return movie_dict
 
 #     movie_filter = {
 #     "adult": False,
@@ -25,11 +25,10 @@ def movie_info(movie):
 #     "title": "쇼생크 탈출",
 #     "vote_average": 8.7,
 # }
-#     # movie.dic.append()
 
-    return movie_dict
 
-    # 여기에 코드를 작성합니다.    
+
+    # 여기에 코드를 작성합니다.
 
 
 

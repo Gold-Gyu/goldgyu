@@ -33,7 +33,7 @@ def max_revenue(movies):
         
 # 아래의 코드는 수정하지 않습니다.
 if __name__ == '__main__':
-    movies_json = open('/Users/goldgyu/Desktop/Algorithm/goldgyu/10_프로젝트/01_pjt/code/data/movies.json', encoding='utf-8')
+    movies_json = open('/Users/goldgyu/Desktop/goldgyu/pjt프로젝트/01_pjt/01_pjt/code/data/movies', encoding='utf-8')
     movies_list = json.load(movies_json)
     
     print(max_revenue(movies_list))
